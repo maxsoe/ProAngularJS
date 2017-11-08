@@ -8,9 +8,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
 
   <script type="text/javascript">
-    var myData = new Object();
-    myData.name = "Adam";
-    myData.weather = "sunny";
+    var myData = {
+      name: "Adam",
+      weather: "sunny"
+    };
 
     console.log("hello " + myData.name + ".");
     console.log("Today is " + myData.weather + ".");
