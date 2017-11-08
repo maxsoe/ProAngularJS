@@ -8,11 +8,22 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
 
   <script type="text/javascript">
-    function myFunc(name) {
-      return ("Hello " + name + ".");
+
+    function printMessage(unknownObject) {
+      if (angular.isFunction(unknownObject)) {
+        unknownObject();
+      } else {
+        console.log(unknownObject);
+      }
+    }
+    var variable1 = function sayHello() {
+      console.log("hello!");
     };
 
-    console.log(myFunc("Adam"));
+    var variable2 = "goodbye!";
+
+    printMessage(variable1);
+    printMessage(variable2);
   </script>
 </head>
 
