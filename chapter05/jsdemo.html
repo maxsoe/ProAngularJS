@@ -17,7 +17,13 @@
       }
     };
 
-    myData.printMessages();
+    var myExtendedObject = {
+      city: "London"
+    };
+
+    angular.extend(myExtendedObject, myData);
+    console.log(myExtendedObject.name);
+    console.log(myExtendedObject.city);
   </script>
 </head>
 
