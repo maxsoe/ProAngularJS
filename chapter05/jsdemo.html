@@ -8,22 +8,16 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
 
   <script type="text/javascript">
+    var myGlobalVar = "apples";
 
-    function printMessage(unknownObject) {
-      if (angular.isFunction(unknownObject)) {
-        unknownObject();
-      } else {
-        console.log(unknownObject);
-      }
-    }
-    var variable1 = function sayHello() {
-      console.log("hello!");
+    function myFunc(name) {
+      var myLocalVar = "sunny";
+      return ("Hello " + name + ". Today is " + myLocalVar + ".");
     };
-
-    var variable2 = "goodbye!";
-
-    printMessage(variable1);
-    printMessage(variable2);
+    console.log(myFunc("Adam"));
+  </script>
+  <script type="text/javascript">
+    console.log("I like " + myGlobalVar);
   </script>
 </head>
 
