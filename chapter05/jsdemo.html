@@ -8,22 +8,18 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
 
   <script type="text/javascript">
-    var myData = {
+    var myObject = {
       name: "Adam",
-      weather: "sunny",
-      printMessages: function () {
-        console.log("Hello " + this.name + ". ");
-        console.log("Today is " + this.weather +".");
-      }
+      weather: "sunny"
     };
 
-    var myExtendedObject = {
-      city: "London"
-    };
+    var myName = "Adam"
+    var myNumber = 23;
 
-    angular.extend(myExtendedObject, myData);
-    console.log(myExtendedObject.name);
-    console.log(myExtendedObject.city);
+    console.log("myObject: " + angular.isObject(myObject));
+    console.log("myName: " + angular.isObject(myName));
+    console.log("myNumber: " + angular.isObject(myNumber));
+
   </script>
 </head>
 
