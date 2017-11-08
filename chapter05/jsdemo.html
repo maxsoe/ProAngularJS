@@ -8,12 +8,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
 
   <script type="text/javascript">
-    function myFunc(name, weather) {
-      console.log("Hello " + name + ".");
-      console.log("It is " + weather + " today.");
+    function myFunc(name) {
+      return ("Hello " + name + ".");
     };
 
-    myFunc("Adam", "sunny");
+    console.log(myFunc("Adam"));
   </script>
 </head>
 
