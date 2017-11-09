@@ -8,19 +8,25 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
 
   <script type="text/javascript">
-    var myData = {
-      name: "Adam",
-      weather: "sunny"
-    };
-
-    myData.SayHello = function() {
-      console.log("hello");
-    };
-
-    var hasName = "name" in myData;
-    var hasDate = "date" in myData;
-    console.log("HasName: " + hasName);
-    console.log("HasDate: " + hasDate);
+    var name = "Jacqui";
+    if (name == "Adam") {
+      console.log("Name is Adam");
+    } else if (name == "Jacqui") {
+      console.log("Name is Jacqui");
+    } else {
+      console.log("Name is neither Adam or Jacqui");
+    }
+    switch (name) {
+      case "Adam":
+        console.log("Name is Adam");
+        break;
+      case "Jacqui":
+        console.log("Name is Jacqui");
+        break;
+      default:
+        console.log("Name is neither Adam or Jacqui");
+        break;
+    }
   </script>
 </head>
 
