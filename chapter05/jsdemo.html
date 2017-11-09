@@ -8,18 +8,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
 
   <script type="text/javascript">
-    var myArray = [100, "Adam", true];
-
-    for (var i=0; i < myArray.length; i++){
-      console.log("Index " + i + ": " + myArray[i] );
-    }
-
-    console.log("---");
-
-    angular.forEach(myArray, function (value, key) {
-      console.log(key + ": " + value);
-    })
-
+    var myData = {
+      name: "Adam",
+      weather: "sunny",
+    };
+    console.log("Prop: " + myData.doesntexist);
   </script>
 </head>
 
