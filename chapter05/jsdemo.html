@@ -13,14 +13,14 @@
       weather: "sunny"
     };
 
-    myData.SayHello = function () {
+    myData.SayHello = function() {
       console.log("hello");
     };
 
-    delete myData.name;
-    delete myData["weather"];
-    delete myData.SayHello;
-
+    var hasName = "name" in myData;
+    var hasDate = "date" in myData;
+    console.log("HasName: " + hasName);
+    console.log("HasDate: " + hasDate);
   </script>
 </head>
 
