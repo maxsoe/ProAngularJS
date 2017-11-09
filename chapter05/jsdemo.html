@@ -10,14 +10,12 @@
   <script type="text/javascript">
     var myData = {
       name: "Adam",
-      weather: "sunny",
-      printMessages: function() {
-        console.log("Hello " + this.name + ". ");
-        console.log("Today is " + this.weather + ".");
-      }
+      weather: "sunny"
     };
 
-    myData.dayOfWeek = "Monday";
+    myData.SayHello = function () {
+      console.log("hello");
+    };
 
   </script>
 </head>
