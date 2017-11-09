@@ -8,17 +8,16 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
 
   <script type="text/javascript">
-    var myObject = {
+    var myData = {
       name: "Adam",
       weather: "sunny"
     };
 
-    var myName = "Adam"
-    var myNumber = 23;
+    myData.name = "Joe";
+    myData["weather"] = "raining";
 
-    console.log("myObject: " + angular.isObject(myObject));
-    console.log("myName: " + angular.isObject(myName));
-    console.log("myNumber: " + angular.isObject(myNumber));
+    console.log("Hello " + myData.name + ".");
+    console.log("It is " + myData["weather"]);
 
   </script>
 </head>
