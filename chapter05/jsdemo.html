@@ -10,15 +10,22 @@
   <script type="text/javascript">
     var myData = {
       name: "Adam",
-      weather: "sunny"
+      weather: "sunny",
+      printMessages: function() {
+        console.log("Hello " + this.name + ". ");
+        console.log("Today is " + this.weather + ".");
+      }
     };
 
-    myData.name = "Joe";
-    myData["weather"] = "raining";
+    for (var prop in myData) {
+      console.log("Name: " + prop + " Value: " + myData[prop]);
+    }
 
-    console.log("Hello " + myData.name + ".");
-    console.log("It is " + myData["weather"]);
+    console.log("---");
 
+    angular.forEach(myData, function (value,key) {
+      console.log("Name: " + key + " Value: " + value);
+    })
   </script>
 </head>
 
