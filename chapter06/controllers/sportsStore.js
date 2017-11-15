@@ -1,4 +1,4 @@
-angula.module("sportsStore")
+angular.module("sportsStore")
   .controller("sportsStoreCtrl", function($scope) {
 
     $scope.data = {
